@@ -108,7 +108,7 @@ body {
   border: 2px solid yellow;
 }
 
-.header__img-prod {
+.header__prod {
   width: 50%;
   height: 70%;
   border: 1px solid green;
@@ -146,5 +146,84 @@ body {
 
 .header__list-item::before {
   content: '- ';
+}
+
+.comp {
+  padding: 50px 0;
+  border: 1px solid blue;
+}
+
+.comp__wrap {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.comp__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 11%;
+}
+
+.comp__list-left {
+  border: 1px solid red;
+}
+
+.comp__prod {
+  width: 25%;
+}
+
+.comp__list-right {
+  border: 1px solid red;
+}
+
+.comp__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0%;
+}
+
+.comp__img-wrap {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.comp__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid green;
+}
+
+.comp__title {
+  font-size: 2vw;
+  text-align: center;
+  font-family: 'Myriad Pro Light', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
