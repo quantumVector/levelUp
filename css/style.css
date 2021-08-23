@@ -67,6 +67,8 @@ p {
   position: relative;
   max-height: 100vh;
   overflow: hidden;
+  background: url("../assets/cover.png") center no-repeat;
+  background-size: cover;
 }
 
 .header__background {
