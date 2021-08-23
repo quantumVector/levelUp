@@ -226,4 +226,63 @@ body {
   text-align: center;
   font-family: 'Myriad Pro Light', sans-serif;
 }
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__wrap {
+  margin: 0 auto;
+  width: 40%;
+  overflow: hidden;
+}
+
+.slider__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__img {
+  height: auto;
+}
+
+.slider__name {
+  font-family: 'Myriad Pro Light', sans-serif;
+  font-size: 2vw;
+}
+
+.slider__review {
+  font-family: 'Myriad Pro Regular', sans-serif;
+  font-size: 2vw;
+}
+
+.slider__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  width: 30%;
+  font-size: 4vw;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.slider__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ececec;
+}
 /*# sourceMappingURL=style.css.map */
