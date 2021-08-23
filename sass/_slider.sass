@@ -1,0 +1,30 @@
+.slider
+  display: flex
+  &__wrap
+    margin: 0 auto
+    width: 40%
+    overflow: hidden
+  &__line
+    display: flex
+  &__item
+    text-align: center
+  &__img
+    height: auto
+  &__name
+    +light
+    font-size: 2vw
+  &__review
+    +regular
+    font-size: 2vw
+  &__arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    vertical-align: middle
+    width: 30%
+    font-size: 4vw
+    cursor: pointer
+    transition: 0.1s
+    &:hover
+      background-color: rgba(0, 0, 0, .5)
+      color: $text-color
