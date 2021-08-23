@@ -24,18 +24,23 @@
     justify-content: center
   &__img
     width: 25%
+  @media screen and (max-width: 768px)
+    &__img
+      width: 80px
+      height: 140px
+    &__wrap
 
 +keyframes(price)
   0%
-  transform: rotate(0deg)
+    transform: rotate(0deg)
   25%
-  transform: rotate(20deg)
+    transform: rotate(20deg)
   50%
-  transform: rotate(0deg)
+    transform: rotate(0deg)
   75%
-  transform: rotate(-20deg)
+    transform: rotate(-20deg)
   100%
-  transform: rotate(0deg)
+    transform: rotate(0deg)
 
 .timer
   &__title
@@ -157,9 +162,48 @@
         left: 50%
         &::after
           content: 'Пример: 88005553535'
-
   &__btn
     display: block
     width: 50%
-    font-size: 3vw
+    padding: 20px
+    font-size: 2vw
+    background-color: #04b932
+    +bold
+    color: #fff
     cursor: pointer
+    border: none
+  @media screen and (max-width: 768px)
+    width: 60%
+    &__input
+      width: 100%
+      padding: 10px 10px
+      border: 1px solid $general-color
+      font-size: 4vw
+      &:focus
+        + .form__label-name
+          font-size: 2vw
+          width: 60%
+          top: 5px
+          left: 45%
+      &:valid
+        + .form__label-name
+          font-size: 2vw
+          width: 60%
+          top: 5px
+          left: 45%
+      &:focus
+        + .form__label-phone
+          font-size: 2vw
+          width: 70%
+          top: 5px
+          left: 50%
+      &:valid
+        + .form__label-phone
+          font-size: 2vw
+          width: 70%
+          top: 5px
+          left: 50%
+    &__btn
+      padding: 10px 10px
+      width: auto
+      font-size: 3vw
