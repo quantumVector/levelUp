@@ -324,4 +324,63 @@ body {
   text-align: center;
   color: #141414;
 }
+
+.footer {
+  padding: 20px;
+  border: 3px solid blue;
+}
+
+.timer {
+  border: 3px solid black;
+}
+
+.timer__title {
+  border: 3px solid #14648a;
+  font-size: 4vw;
+  text-align: center;
+  font-family: 'Myriad Pro Bold', sans-serif;
+}
+
+.timer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid green;
+}
+
+.timer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid red;
+}
+
+.timer__separator {
+  font-size: 10vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+}
+
+.timer__val {
+  font-size: 10vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+}
+
+.timer__text {
+  font-size: 2vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+}
+
+.form {
+  padding-bottom: 600px;
+}
 /*# sourceMappingURL=style.css.map */
