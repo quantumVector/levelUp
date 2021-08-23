@@ -1,8 +1,10 @@
 .slider
   display: flex
+  padding: 40px 0
+  background: linear-gradient(#859398, #d3dee2)
   &__wrap
     margin: 0 auto
-    width: 40%
+    width: 30%
     overflow: hidden
   &__line
     display: flex
@@ -11,6 +13,7 @@
   &__img
     height: auto
   &__name
+    padding: 10px
     +light
     font-size: 2vw
   &__review
@@ -21,10 +24,11 @@
     align-items: center
     justify-content: center
     vertical-align: middle
-    width: 30%
+    width: 40%
     font-size: 4vw
     cursor: pointer
     transition: 0.1s
+    border-radius: 100%
+    user-select: none
     &:hover
-      background-color: rgba(0, 0, 0, .5)
       color: $text-color

@@ -1,24 +1,22 @@
 .footer
   padding: 20px
-  border: 3px solid blue
-  &__title
+  background: linear-gradient(#E0EAFC, #CFDEF3)
+  &__prod
     text-align: center
     font-size: 5vw
   &__timer
   &__form
   &__price
-    border: 1px solid blue
   &__old-value
     display: block
     font-size: 5vw
     +light
     text-align: center
-    border: 1px solid red
   &__current-value
     font-size: 10vw
     +bold
     text-align: center
-    color: #e20e0e
+    color: $red-color
     animation: price 1s ease-in-out infinite
   &__wrap
     padding: 20px 0
@@ -29,38 +27,39 @@
 
 +keyframes(price)
   0%
-    transform: rotate(0deg)
+  transform: rotate(0deg)
   25%
-    transform: rotate(20deg)
+  transform: rotate(20deg)
   50%
-    transform: rotate(0deg)
+  transform: rotate(0deg)
   75%
-    transform: rotate(-20deg)
+  transform: rotate(-20deg)
   100%
-    transform: rotate(0deg)
+  transform: rotate(0deg)
 
 .timer
-  border: 3px solid black
   &__title
-    border: 3px solid #14648a
     font-size: 4vw
     text-align: center
     +bold
   &__wrap
     display: flex
     justify-content: center
-    border: 3px solid green
   &__item
     display: flex
     flex-direction: column
     align-items: center
-    border: 3px solid red
   &__days
+    color: $red-color
   &__hours
+    color: $red-color
   &__minutes
+    color: $red-color
   &__seconds
+    color: $red-color
   &__separator
     font-size: 10vw
+    color: $red-color
     +light
   &__val
     font-size: 10vw
@@ -75,7 +74,6 @@
   align-items: center
   justify-content: center
   width: 40%
-  border: 1px solid red
   &__input-wrap
     position: relative
   &__label

@@ -96,7 +96,6 @@ p {
   text-align: center;
   font-family: 'Myriad Pro Bold', sans-serif;
   color: #ececec;
-  border: 1px solid red;
 }
 
 .header .flex-container {
@@ -111,13 +110,11 @@ p {
           justify-content: center;
   height: 100%;
   padding: 20px;
-  border: 2px solid yellow;
 }
 
 .header__prod {
   width: 50%;
   height: 70%;
-  border: 1px solid green;
   background-image: url(../assets/prod.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -133,11 +130,9 @@ p {
           align-items: center;
   width: 50%;
   height: 70%;
-  border: 1px solid blue;
 }
 
 .property__list {
-  border: 3px solid green;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -147,7 +142,6 @@ p {
   padding: 10px;
   font-size: 2vw;
   color: #ececec;
-  border: 1px solid red;
 }
 
 .property__item::before {
@@ -156,11 +150,10 @@ p {
 
 .comp {
   padding: 50px 0;
-  border: 1px solid blue;
+  background: linear-gradient(45deg, #4e54c8, #abaffa);
 }
 
 .comp__wrap {
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,16 +173,8 @@ p {
   width: 11%;
 }
 
-.comp__list-left {
-  border: 1px solid red;
-}
-
 .comp__prod {
   width: 25%;
-}
-
-.comp__list-right {
-  border: 1px solid red;
 }
 
 .comp__list-item {
@@ -213,7 +198,6 @@ p {
   padding-bottom: 100%;
   height: 0;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .comp__img {
@@ -224,7 +208,6 @@ p {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid green;
 }
 
 .comp__title {
@@ -237,11 +220,14 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#859398), to(#d3dee2));
+  background: linear-gradient(#859398, #d3dee2);
 }
 
 .slider__wrap {
   margin: 0 auto;
-  width: 40%;
+  width: 30%;
   overflow: hidden;
 }
 
@@ -260,6 +246,7 @@ p {
 }
 
 .slider__name {
+  padding: 10px;
   font-family: 'Myriad Pro Light', sans-serif;
   font-size: 2vw;
 }
@@ -280,21 +267,26 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   vertical-align: middle;
-  width: 30%;
+  width: 40%;
   font-size: 4vw;
   cursor: pointer;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  border-radius: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .slider__arrow:hover {
-  background-color: rgba(0, 0, 0, 0.5);
   color: #ececec;
 }
 
 .info {
   padding: 20px;
-  border: 1px solid red;
+  background: no-repeat url(../assets/cloud.jpg);
+  background-size: cover;
 }
 
 .info__content {
@@ -303,20 +295,17 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 1px solid green;
 }
 
 .info__img {
   width: 40%;
   height: auto;
-  border: 1px solid blue;
 }
 
 .info__text {
   width: 40%;
   font-family: 'Myriad Pro Regular', sans-serif;
   font-size: 3vw;
-  border: 1px solid yellow;
 }
 
 .info__list {
@@ -333,16 +322,13 @@ p {
 
 .footer {
   padding: 20px;
-  border: 3px solid blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E0EAFC), to(#CFDEF3));
+  background: linear-gradient(#E0EAFC, #CFDEF3);
 }
 
-.footer__title {
+.footer__prod {
   text-align: center;
   font-size: 5vw;
-}
-
-.footer__price {
-  border: 1px solid blue;
 }
 
 .footer__old-value {
@@ -350,7 +336,6 @@ p {
   font-size: 5vw;
   font-family: 'Myriad Pro Light', sans-serif;
   text-align: center;
-  border: 1px solid red;
 }
 
 .footer__current-value {
@@ -378,56 +363,47 @@ p {
 
 @-webkit-keyframes price {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   25% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
   }
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
+  transform: rotate(0deg);
   75% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
   }
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
+  transform: rotate(0deg);
 }
 
 @keyframes price {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   25% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
   }
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
+  transform: rotate(0deg);
   75% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
   }
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
-}
-
-.timer {
-  border: 3px solid black;
+  transform: rotate(0deg);
 }
 
 .timer__title {
-  border: 3px solid #14648a;
   font-size: 4vw;
   text-align: center;
   font-family: 'Myriad Pro Bold', sans-serif;
@@ -440,7 +416,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid green;
 }
 
 .timer__item {
@@ -454,11 +429,27 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid red;
+}
+
+.timer__days {
+  color: #e20e0e;
+}
+
+.timer__hours {
+  color: #e20e0e;
+}
+
+.timer__minutes {
+  color: #e20e0e;
+}
+
+.timer__seconds {
+  color: #e20e0e;
 }
 
 .timer__separator {
   font-size: 10vw;
+  color: #e20e0e;
   font-family: 'Myriad Pro Light', sans-serif;
 }
 
@@ -487,7 +478,6 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40%;
-  border: 1px solid red;
 }
 
 .form__input-wrap {
