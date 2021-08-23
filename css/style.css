@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Myriad Pro Light";
   src: url("../fonts/MyriadPro-Light.eot");
@@ -29,7 +30,12 @@
 
 body {
   font-family: 'Myriad Pro Regular', sans-serif;
-  color: #141414;
+  color: #272727;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -322,12 +328,98 @@ body {
 .info__item {
   font-size: 1.5vw;
   text-align: center;
-  color: #141414;
+  color: #272727;
 }
 
 .footer {
   padding: 20px;
   border: 3px solid blue;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.footer__price {
+  border: 1px solid blue;
+}
+
+.footer__old-value {
+  display: block;
+  font-size: 5vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.footer__current-value {
+  font-size: 10vw;
+  font-family: 'Myriad Pro Bold', sans-serif;
+  text-align: center;
+  color: #e20e0e;
+  -webkit-animation: price 1s ease-in-out infinite;
+          animation: price 1s ease-in-out infinite;
+}
+
+.footer__wrap {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__img {
+  width: 25%;
+}
+
+@-webkit-keyframes price {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes price {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .timer {
@@ -381,6 +473,140 @@ body {
 }
 
 .form {
-  padding-bottom: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  border: 1px solid red;
+}
+
+.form__input-wrap {
+  position: relative;
+}
+
+.form__label {
+  margin-bottom: 10px;
+  font-size: 4vw;
+}
+
+.form__label-name {
+  position: absolute;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  font-size: 2vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+  pointer-events: none;
+}
+
+.form__label-name::after {
+  content: 'Ваше имя';
+}
+
+.form__label-phone {
+  position: absolute;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  font-size: 2vw;
+  font-family: 'Myriad Pro Light', sans-serif;
+  pointer-events: none;
+}
+
+.form__label-phone::after {
+  content: 'Ваш телефон';
+}
+
+.form__input {
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  font-size: 2.5vw;
+  text-align: center;
+  outline: none;
+  border: 3px solid #272727;
+}
+
+.form__input::-webkit-outer-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.form__input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.form__input:focus + .form__label-name {
+  font-size: 1.3vw;
+  color: red;
+  height: auto;
+  top: 5px;
+  left: 40%;
+}
+
+.form__input:focus + .form__label-name::after {
+  content: 'Пример: Джавахарлал Неру';
+}
+
+.form__input:valid + .form__label-name {
+  font-size: 1.3vw;
+  color: red;
+  height: auto;
+  top: 5px;
+  left: 40%;
+}
+
+.form__input:valid + .form__label-name::after {
+  content: 'Пример: Джавахарлал Неру';
+}
+
+.form__input:focus + .form__label-phone {
+  font-size: 1.3vw;
+  color: red;
+  height: auto;
+  top: 5px;
+  left: 50%;
+}
+
+.form__input:focus + .form__label-phone::after {
+  content: 'Пример: 88005553535';
+}
+
+.form__input:valid + .form__label-phone {
+  font-size: 1.3vw;
+  color: red;
+  height: auto;
+  top: 5px;
+  left: 50%;
+}
+
+.form__input:valid + .form__label-phone::after {
+  content: 'Пример: 88005553535';
+}
+
+.form__btn {
+  display: block;
+  width: 50%;
+  font-size: 3vw;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

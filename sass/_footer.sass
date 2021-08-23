@@ -1,8 +1,43 @@
 .footer
   padding: 20px
   border: 3px solid blue
+  &__title
+    text-align: center
+    font-size: 5vw
   &__timer
   &__form
+  &__price
+    border: 1px solid blue
+  &__old-value
+    display: block
+    font-size: 5vw
+    +light
+    text-align: center
+    border: 1px solid red
+  &__current-value
+    font-size: 10vw
+    +bold
+    text-align: center
+    color: #e20e0e
+    animation: price 1s ease-in-out infinite
+  &__wrap
+    padding: 20px 0
+    display: flex
+    justify-content: center
+  &__img
+    width: 25%
+
++keyframes(price)
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(20deg)
+  50%
+    transform: rotate(0deg)
+  75%
+    transform: rotate(-20deg)
+  100%
+    transform: rotate(0deg)
 
 .timer
   border: 3px solid black
@@ -35,4 +70,98 @@
     +light
 
 .form
-  padding-bottom: 600px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 40%
+  border: 1px solid red
+  &__input-wrap
+    position: relative
+  &__label
+    margin-bottom: 10px
+    font-size: 4vw
+  &__label-name
+    position: absolute
+    height: 50%
+    overflow: auto
+    margin: auto
+    top: 0
+    left: 10%
+    bottom: 0
+    right: 0
+    font-size: 2vw
+    +light
+    pointer-events: none
+    &::after
+      content: 'Ваше имя'
+  &__label-phone
+    position: absolute
+    height: 50%
+    overflow: auto
+    margin: auto
+    top: 0
+    left: 10%
+    bottom: 0
+    right: 0
+    font-size: 2vw
+    +light
+    pointer-events: none
+    &::after
+      content: 'Ваш телефон'
+  &__input
+    margin-bottom: 20px
+    padding: 30px 20px
+    width: 100%
+    font-size: 2.5vw
+    text-align: center
+    outline: none
+    border: 3px solid $general-color
+    &::-webkit-outer-spin-button
+      display: none
+      -webkit-appearance: none
+    &::-webkit-inner-spin-button
+      display: none
+      -webkit-appearance: none
+    &:focus
+      + .form__label-name
+        font-size: 1.3vw
+        color: red
+        height: auto
+        top: 5px
+        left: 40%
+        &::after
+          content: 'Пример: Джавахарлал Неру'
+    &:valid
+      + .form__label-name
+        font-size: 1.3vw
+        color: red
+        height: auto
+        top: 5px
+        left: 40%
+        &::after
+          content: 'Пример: Джавахарлал Неру'
+    &:focus
+      + .form__label-phone
+        font-size: 1.3vw
+        color: red
+        height: auto
+        top: 5px
+        left: 50%
+        &::after
+          content: 'Пример: 88005553535'
+    &:valid
+      + .form__label-phone
+        font-size: 1.3vw
+        color: red
+        height: auto
+        top: 5px
+        left: 50%
+        &::after
+          content: 'Пример: 88005553535'
+
+  &__btn
+    display: block
+    width: 50%
+    font-size: 3vw
+    cursor: pointer

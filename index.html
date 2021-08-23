@@ -80,38 +80,41 @@
   </section>
 
   <section class="slider">
-    <div class="slider__arrow slider__arrow-prev"> < </div>
-    <div class="slider__wrap">
-      <div class="slider__line">
-        <div class="slider__item">
-          <img class="slider__img" src="./assets/brazers.jpg" alt="person">
-          <p class="slider__name">Лысый из Бразерс</p>
-          <p class="slider__review">Чуть не уволили с работы. Спасибо этому фантастическому препарату!</p>
+    <div class="slider__arrow slider__arrow-prev">
+      < </div>
+        <div class="slider__wrap">
+          <div class="slider__line">
+            <div class="slider__item">
+              <img class="slider__img" src="./assets/brazers.jpg" alt="person">
+              <p class="slider__name">Лысый из Бразерс</p>
+              <p class="slider__review">Чуть не уволили с работы. Спасибо этому фантастическому препарату!</p>
+            </div>
+            <div class="slider__item">
+              <img class="slider__img" src="./assets/tramp.jpg" alt="person">
+              <p class="slider__name">Дональд Трамп</p>
+              <p class="slider__review">Не повезло на выборах, зато повезло в постели! Supeeeeeer! Level up baby!!!</p>
+            </div>
+            <div class="slider__item">
+              <img class="slider__img" src="./assets/ponasenkov.jpg" alt="person">
+              <p class="slider__name">Евгений Понасенков</p>
+              <p class="slider__review">Просто Евгениально!!! Слава Дарвину, что учёные смогли придумать это чудо науки!
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="slider__item">
-          <img class="slider__img" src="./assets/tramp.jpg" alt="person">
-          <p class="slider__name">Дональд Трамп</p>
-          <p class="slider__review">Не повезло на выборах, зато повезло в постели! Supeeeeeer! Level up baby!!!</p>
-        </div>
-        <div class="slider__item">
-          <img class="slider__img" src="./assets/ponasenkov.jpg" alt="person">
-          <p class="slider__name">Евгений Понасенков</p>
-          <p class="slider__review">Просто Евгениально!!! Слава Дарвину, что учёные смогли придумать это чудо науки!</p>
-        </div>
-      </div>
-    </div>
-    <div class="slider__arrow slider__arrow-next"> > </div>
+        <div class="slider__arrow slider__arrow-next"> > </div>
   </section>
 
   <section class="info">
     <div class="info__content">
       <img class="info__img" src="assets/doctor2.png" alt="doc">
-      <p class="info__text">LevelUp - новейший препарат, созданный ведущим учëными и является революцией среди прочего обмана и скама. Если ваша девушка зевает по утрам, а зимой не может погреть руки, то только одна пилюля решит все вопросы. Даже повестка из армии не бодрит так, как LevelUp.
+      <p class="info__text">LevelUp - новейший препарат, созданный ведущим учёными и является революцией среди прочего обмана и скама. Если ваша девушка зевает по утрам, а зимой не может погреть руки, то только одна пилюля решит все вопросы. Даже повестка из армии не бодрит так, как LevelUp.
       </p>
     </div>
     <div class="property">
       <ul class="property__list info__list">
-        <li class="property__item info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quod.
+        <li class="property__item info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+          quod.
         </li>
         <li class="property__item info__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate dolor
           molestiae nihil soluta! Modi, et impedit?</li>
@@ -121,6 +124,7 @@
   </section>
 
   <footer class="footer">
+    <h1 class="footer__title">LevelUp</h1>
     <div class="timer footer__timer">
       <div class="timer__title">Поторопитесь, акция скоро закончится!</div>
       <div class="timer__wrap">
@@ -145,8 +149,26 @@
         </div>
       </div>
     </div>
+    <div class="footer__price">
+      <s class="footer__old-value">19999$</s>
+      <p class="footer__current-value">39999$</p>
+    </div>
 
-    <form action="#" class="form footer__form"></form>
+    <div class="footer__wrap">
+
+      <form class="form footer__form" action="#" >
+        <div class="form__input-wrap">
+          <input class="form__input form__name" type="text" required>
+          <label class="form__label-name"></label>
+        </div>
+        <div class="form__input-wrap">
+          <input class="form__input form__phone" type="number" required>
+          <label class="form__label-phone"></label>
+        </div>
+        <button class="form__btn" type="submit">Заказать</button>
+      </form>
+      <img class="footer__img" src="./assets/prod.png" alt="prod">
+    </div>
   </footer>
 
   <script src="js/slider.js"></script>
